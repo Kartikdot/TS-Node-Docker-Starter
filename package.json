@@ -4,7 +4,7 @@
   "description": "Starter code for node ts app running as a docker container",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev": "nodemon -r dotenv/config src/server.ts"
+    "start:dev": "nodemon -L -r dotenv/config src/server.ts"
   },
   "author": "Kartik",
   "license": "ISC",
