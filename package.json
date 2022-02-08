@@ -1,7 +1,7 @@
 {
   "name": "TS-Node-Docker-starter",
   "version": "1.0.0",
-  "description": "Starter code for node ts app running as a docker container",
+  "description": "Starter code for node ts app running in a docker container with hot reload",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:dev": "nodemon -r dotenv/config src/server.ts"
