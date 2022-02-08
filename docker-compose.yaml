@@ -1,0 +1,15 @@
+version: '3.4'
+services:
+  myapp:
+    container_name: ts-node-docker-starter
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - PORT = ${PORT}
+    ports:
+      - 3001:${PORT}
+    env_file:
+      - .env
+  
