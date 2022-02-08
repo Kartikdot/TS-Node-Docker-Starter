@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:dev": "nodemon -r dotenv/config src/server.ts"
   },
-  "author": "Kartik",
+  "author": "Kartik K",
   "license": "ISC",
   "devDependencies": {
     "@types/express": "^4.17.13",
