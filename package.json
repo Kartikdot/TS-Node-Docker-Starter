@@ -1,0 +1,22 @@
+{
+  "name": "TS-Node-Docker-starter",
+  "version": "1.0.0",
+  "description": "Starter code for node ts app running as a docker container",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon -r dotenv/config src/server.ts"
+  },
+  "author": "Kartik",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.16",
+    "dotenv": "^16.0.0",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.5.0",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
