@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "Starter code for node ts app running as a docker container",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev": "nodemon -r dotenv/config src/server.ts"
+    "build": "tsc",
+    "start:dev": "node -r dotenv/config dist/server.js",
+    "start:watch": "nodemon -r dotenv/config src/server.ts"
   },
   "author": "Kartik",
   "license": "ISC",
