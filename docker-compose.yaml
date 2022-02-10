@@ -5,11 +5,15 @@ services:
     restart: always
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.dev
       args:
         - PORT = ${PORT}
     ports:
       - 3001:${PORT}
     env_file:
       - .env
-  
+    volumes:
+      - ./:/usr/local/apps/myapp/dev
+      - exclude:/usr/local/apps/myapp/dev/node_modules/
+volumes:
+  exclude:
